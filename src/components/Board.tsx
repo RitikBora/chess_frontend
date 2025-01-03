@@ -17,8 +17,10 @@ import { RoomConnectDialog } from "./RoomConnectDialog";
 export const Board = () =>
 {
     
+    // @ts-expect-error
      const [chess , setChess] = useState<Chess>(new Chess());
      const [board , setBoard] = useRecoilState(BoardAtom);
+     //@ts-expect-error
      const [turn , setTurn] = useRecoilState(TurnAtom);
      const [openGameOver , setOpenGameOverPopup] = useState(false);
 
@@ -93,8 +95,10 @@ export const Board = () =>
       }
     } , [whiteTime , blackTime])
     
+    // @ts-expect-error
 const [{ isOver }, drop] = useDrop(() => ({
   accept: "piece", 
+  // @ts-expect-error
   drop: (item: { id: string; position: string }, monitor) => {
     const dropTarget = monitor.getClientOffset(); 
     

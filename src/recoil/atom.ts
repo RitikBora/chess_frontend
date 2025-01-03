@@ -1,5 +1,5 @@
 
-import { Chess, Color, PieceSymbol, Square } from "chess.js";
+import {  Color, PieceSymbol, Square } from "chess.js";
 import { atom } from "recoil"
 
 

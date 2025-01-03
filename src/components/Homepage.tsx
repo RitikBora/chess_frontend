@@ -5,7 +5,7 @@ import { Carousel } from "./Carousel"
 export const HomePage = () => {
     return (
         <motion.div 
-            className="flex flex-col gap-20 mt-20 overflow-x-hidden"
+            className="flex flex-col gap-20 pt-20 overflow-x-hidden"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
